@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Materials</title>
+</head>
+<body th:each="material:${materials}">
+<h1 th:text="${material.getTitle()}"></h1>
+</body>
+</html>
