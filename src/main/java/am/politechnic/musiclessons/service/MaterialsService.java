@@ -1,5 +1,6 @@
 package am.politechnic.musiclessons.service;
 
+import am.politechnic.musiclessons.repository.dto.MaterialsDto;
 import am.politechnic.musiclessons.repository.entity.Materials;
 import am.politechnic.musiclessons.repository.rep.MaterialsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,5 +20,7 @@ public class MaterialsService {
         return materialsRepo.findAll();
     }
 
-
+    public Materials findMaterialById(int id) {
+        return materialsRepo.findOne(id);
+    }
 }

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
 </head>
-<body style="	height: 1000px;	width: 1595px;">
+<body style="width: 1595px;">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:black; ">
     <a href="/home" class="navbar-brand">
         <img src="http://pngimagesfree.com/Music/Colour-Music-Notes-PNG.png" width="30" height="30" alt=""/>
@@ -42,7 +42,7 @@ navigation">
                 <a href="" class="nav-link">Հաղորդագրություն</a>
             </li>
             <li class="nav-item">
-                <a href="/login" class="nav-link">Մուտք</a>
+                <a href="" class="nav-link">Մուտք</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link" data-toggle="modal" data-target="#exampleModal1">Մեր մասին</a>
@@ -58,88 +58,16 @@ navigation">
         </form>
     </div>
 </nav>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div>
+    <h5 th:text="${material.getTitle()}"></h5>
+    <h5 th:text="${material.getText()}"></h5>
 
-
-<!-- //slider -->
-<div class="container-fluid p-0">
-    <div id="carouselExampleIndicators" class="carousel slide"
-         data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://thumb.cloud.mail.ru/weblink/thumb/xw1/2pMN/4qQ7tB25f/1.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="d-block w-100 mx-auto"/>
-            </div>
-
-            <div class="carousel-item">
-                <img src="https://thumb.cloud.mail.ru/thumb/xw1/img/2.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="d-block w-100 mx-auto"/>
-            </div>
-
-            <div class="carousel-item">
-                <img src="https://thumb.cloud.mail.ru/thumb/xw1/img/3.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="d-block w-100  mx-auto"/>
-            </div>
-        </div>
-
-        <a href="#carouselExampleIndicators" class="carousel-control-prev" role="button" data-slide="prev">
-
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-
-        <a href="#carouselExampleIndicators" class="carousel-control-next" role="button" data-slide="prev">
-
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-<!--<hr>-->
-<div class="container-fluid">
-    <div class="container">
-        <div class="row text-center">
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/dashnamur.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/1'}" class="nav-link">Դաշնամուր</a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/gitar.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/2'}" class="nav-link">Կիթառ</a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/shepor.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/3'}" class="nav-link">Շեփոր</a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/qnar.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/4'}" class="nav-link">Քնար</a>
-            </div>
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/duduk.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/5'}" class="nav-link">Դուդուկ</a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/30.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/6'}" class="nav-link">Ջութակ</a>
-            </div>
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/qanon.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a th:href="@{'/material/7'}" class="nav-link">Սազ</a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/vocher.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a href="index11.php" class="nav-link">Երաժշտական ոճեր</a>
-
-
-            </div>
-            <div class="col-xs-12 col-sm-4 pt-3"><img src="https://thumb.cloud.mail.ru/thumb/xw1/img/patmutyun.jpg?x-email=sargis.ghazaryan.93%40mail.ru" alt="" class="w-100"/>
-                <a href="index12.php" class="nav-link">Ռուս երաժշտության պատմություն</a>
-
-            </div>
-
-        </div>
-    </div>
 </div>
 
 
@@ -183,7 +111,8 @@ navigation">
     </div>
 </div>
 
-<footer class="site-footer" style="background-color: #000; color: #fff; margin-top: 30px; padding-top: 30px;">
+
+<footer class="site-footer" style="background-color: #000; color: #fff; margin-top: 250px; padding-top: 30px;">
 
     <div class="container">
         <div class="row">
